@@ -1,0 +1,111 @@
+<resources>
+  <!-- App general-->
+  <string name="app_name">NightOut</string>
+  <string name="action_settings">Settings</string>
+  <string name="date_format">d/M/yyyy</string>
+  <string name="maps_query">geo:0,0?q=</string>
+  <string name="maps_package">com.google.android.apps.maps</string>
+
+  <!--Ovaj deo je za registraciju i login-->
+  <string name="register_choice">Do you want to register as:</string>
+  <string name="login_text">Go to login page</string>
+  <string name="success_registration">Registration was successful</string>
+  <string name="failed_registration">Registration failed</string>
+  <string name="login_failed_toast">Login failed</string>
+  <string name="email_invalid_input_toast">Please enter a valid email</string>
+  <string name="password_invalid_input_toast">Enter a password upto 8 characters please</string>
+  <string name="name_invalid_input_toast">Enter name please</string>
+  <string name="surname_invalid_input_toast">Enter surname please</string>
+  <string name="date_invalid_input_toast">Invalid date, try again</string>
+  <string name="city_invalid_input_toast">Enter city please</string>
+  <string name="address_invalid_input_toast">Enter address please</string>
+  <string name="registration_choice_fragment_tag">FragmentChoice</string>
+  <string name="registration_form_fragment_tag">FragmentForm</string>
+  
+  <!--Kreiranje i menjanje eventa-->
+  <string name="description_invalid_input">Descripion needs to be set.</string>
+  <string name="date_of_event_invalid_input">Date needs to be set.</string>
+  
+  <string name="event_picture_question">Change event picture?</string>
+  <string name="event_picture_title">Event picture</string>
+  <string name="gallery_event_title">Select new event picture</string>
+  
+  <!---->
+  <string name="editProfile">Edit profile</string>
+  <string name="profile_picture_question">Change profile picture?</string>
+  <string name="profile_picture_title">Profile picture</string>
+  <string name="gallery_profile_title">Select new profile picture</string>
+
+  <!--Fireabase-->
+  <string name="firebase_api_key">AIzaSyBrKPrHRwN0TK4L73QbDOTInibq0ZZrT0Y</string>
+  <string name="firebase_aplication_id">nightout - 9a564</string>
+  <string name="firebase_database_url">https://nightout-9a564.firebaseio.com</string>
+  <string name="firebase_storage_bucket">nightout-9a564.appspot.com</string>
+  
+  <!--Database names-->
+  <string name="organisers_table_name">organisers</string>
+  <string name="users_table_name">users</string>
+  <string name="events_table_name">events</string>
+  <string name="locals_table_name">locals</string>
+  <string name="user_followed_events_table_name">user-event</string>
+  <string name="user_followed_organisers_table_name">user-organiser</string>
+  <string name="user_rate_organiser_table_name">user-rate-organiser</string>
+  
+  <string name="organiser_id_column">OrganiserId</string>
+  <string name="organiser_contact_column">Contact</string>
+  <string name="organiser_description_column">Description</string>
+  <string name="organiser_email_column">Email</string>
+  <string name="organiser_local_id_column">LocalId</string>
+  <string name="organiser_name_column">Name</string>
+  <string name="organiser_number_of_votes_column">NumberOfVotes</string>
+  <string name="organiser_profile_image_column">ProfileImage</string>
+  <string name="organiser_rating_column">Rating</string>
+  
+  <string name="event_id_column">EventId</string>
+  <string name="event_description_column">Description</string>
+  <string name="event_address_column">Address</string>
+  <string name="event_city_column">City</string>
+  <string name="event_time_of_event_column">TimeOfEvent</string>
+  <string name="event_type_of_event_column">TypeOfEvent</string>
+  <string name="event_image_column">ImageString</string>
+  <string name="event_date_of_event_column">DateOfEvent</string>
+
+  <string name="user_id_column">UserId</string>
+  <string name="user_sex_column">Sex</string>
+  <string name="user_email_column">Email</string>
+  <string name="user_firstname_column">FirstName</string>
+  <string name="user_surname_column">Surname</string>
+  <string name="user_birthday_column">DateOfBirth</string>
+  <string name="user_description_column">Description</string>
+  <string name="user_profile_image_column">ProfileImage</string>
+  <string name="user_is_administrator_column">IsAdministrator</string>
+  
+  <string name="local_id_column">LocalId</string>
+  <string name="local_address_column">Address</string>
+  <string name="local_city_column">City</string>
+  <string name="local_foundation_date_column">FoundationDate</string>
+  
+  
+  <string name="rating_column">Rate</string>
+  
+  
+    <string-array name="sex">
+      <item>Male</item>
+      <item>Female</item>
+    </string-array>
+
+  <string-array name="eventType">
+    <item>Undefined</item>
+    <item>Party</item>
+    <item>Festival</item>
+  </string-array>
+  <string-array name="grade">
+    <item>Rate</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+  </string-array>
+  
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userMainPageFragmentContainer"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:paddingHorizontal="10dp">
+
+			<ImageView
+				android:id="@+id/goToUserProfile"
+				android:layout_marginLeft="5dp"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.1"
+				android:src="@drawable/usericon" />
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.6"
+				android:orientation="vertical">
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/goToAdminPanel"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.1"
+				android:src="@drawable/menu"
+				android:visibility = "invisible"/>
+       
+		</LinearLayout>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_gravity="bottom"
+			android:background="@color/colorPrimary"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="100dp">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.8"	
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="0.6"
+					android:orientation="horizontal">
+
+					<Spinner
+						android:id="@+id/userSearchEventType"
+						android:layout_width="150dp"
+						android:layout_height="50dp"
+						android:layout_marginBottom="15dp"/>
+
+					<EditText
+						android:id="@+id/userSearchCity"
+						android:hint="City"
+						android:layout_weight="0.5"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="0.4"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<TextView
+						android:id="@+id/searchDate"
+						android:text="Date"
+						android:layout_height="match_parent"
+						android:layout_width="wrap_content"
+						android:textColor="@color/colorPrimary"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="0.2"
+				android:gravity="center">
+
+				<ImageView
+					android:id="@+id/filteringMagnifier"
+					android:src="@drawable/magnifyingGlass"
+					android:layout_height="40dp"
+					android:layout_width="40dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_gravity="bottom"
+			android:background="@color/colorPrimary"/>
+
+		<ListView
+			android:layout_height="0dp"
+			android:layout_width="match_parent"
+			android:layout_weight="0.75"
+			android:id="@+id/userEventsView">
+		</ListView>
+
+	</LinearLayout>
+
+</FrameLayout>

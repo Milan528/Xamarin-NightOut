@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/rootViewUser"
+	>
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal = "30dp">
+		
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterUserEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="E-mail"
+				android:inputType="textEmailAddress"
+				/>
+		
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterUserPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Password"
+				android:inputType="textPassword"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterUserName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Name"
+				android:inputType="textPersonName"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterUserSurname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Surname"
+				android:inputType="textPersonName"/>
+	</android.support.design.widget.TextInputLayout>
+	<Spinner
+			android:id="@+id/RegisterUserSex"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp"
+			android:entries="@array/sex">
+		
+	</Spinner>
+	<TextView
+			android:id="@+id/RegisterUserDateDisplay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Date of birth"
+			android:gravity = "center_horizontal"
+			android:textSize="18sp"/>
+
+	<Button
+			android:id="@+id/RegisterUserBtnRegister"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:text="Register"
+			android:textColor="@color/white"
+			android:background="@drawable/registerRoundButton"
+			android:layout_marginTop="18dp"
+			android:layout_gravity="center"
+			android:layout_marginBottom="5dp"/>
+
+	<TextView 
+		android:id="@+id/goToLoginUser"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_below="@+id/RegisterUserBtnRegister"
+		android:text="@string/login_text"
+		android:layout_marginTop="18dp"
+	/>
+	</LinearLayout>
+
+
+</LinearLayout>
+	
+	</AbsoluteLayout>

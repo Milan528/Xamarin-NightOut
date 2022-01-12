@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1096335184720",
+    "firebase_url": "https://nightout-9a564.firebaseio.com",
+    "project_id": "nightout-9a564",
+    "storage_bucket": "nightout-9a564.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096335184720:android:393c595dfbe6627f",
+        "android_client_info": {
+          "package_name": "NightOut.NightOut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096335184720-j2g566lg4jdmhb5gtkcfelj70vmgaafs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "NightOut.NightOut",
+            "certificate_hash": "70ddc92550436bd80e0bd3275a0a6e691fcbd04a"
+          }
+        },
+        {
+          "client_id": "1096335184720-g2l3tljoqrd0qj9edrgrpvf4k28budq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrKPrHRwN0TK4L73QbDOTInibq0ZZrT0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096335184720-g2l3tljoqrd0qj9edrgrpvf4k28budq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

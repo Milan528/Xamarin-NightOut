@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<FrameLayout
+		 android:id="@+id/organizatorProfileFragmentContainer"
+		 android:layout_width="match_parent"
+         android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<ImageView 
+				android:id="@+id/OrganiserProfilePicture"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.3"
+				android:scaleType="centerCrop"
+				android:src="@drawable/profileExample"
+				android:layout_marginBottom="5dp"/>
+
+			<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.6">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginBottom="10dp">
+			
+						<TextView
+							android:id="@+id/organiserName"
+							android:gravity="center"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:layout_weight="0.5"
+							android:textSize="23dp"
+							android:text=""
+						/>
+					
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/rateStar"
+						/>
+
+						<TextView
+							android:id="@+id/organiserRating"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:layout_weight="0.3"
+							android:gravity="center|left"
+							android:text=""
+							android:textSize="25dp"
+							android:layout_marginLeft="5dp"
+						/>
+				
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginVertical="10dp">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:layout_marginHorizontal="20dp"
+							android:src="@drawable/email"
+						/>
+
+						<TextView
+							android:id="@+id/organiserProfileEmail"
+							android:layout_height="match_parent"
+							android:layout_width="match_parent"
+							android:gravity="center|left"
+							android:text=""
+							android:textSize="17dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginVertical="10dp">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/contact"
+							android:layout_marginHorizontal="20dp"
+						/>
+
+						<TextView
+							android:id="@+id/organiserProfileContact"
+							android:layout_height="match_parent"
+							android:layout_width="match_parent"
+							android:gravity="center|left"
+							android:text=""
+							android:textSize="17dp"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginVertical="10dp">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/location"
+							android:layout_marginHorizontal="20dp"
+						/>
+
+						<TextView
+							android:id="@+id/organiserProfileCity"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:gravity="center|left"
+							android:text="City :"
+							android:textSize="17dp"
+							android:layout_weight="0.15"/>
+
+						<TextView
+							android:id="@+id/organiserProfileAddress"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:gravity="center|left"
+							android:text=""
+							android:textSize="15dp"
+							android:textColor="@color/lightBlue"
+							android:layout_weight="0.75"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginVertical="10dp">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/sketch"
+							android:layout_marginHorizontal="20dp"
+						/>
+
+						<TextView
+							android:id="@+id/organiserProfileFoundationDate"
+							android:layout_height="match_parent"
+							android:layout_width="match_parent"
+							android:gravity="center|left"
+							android:text=""
+							android:textSize="17dp"
+						/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Description"
+							android:gravity="center"
+							android:textSize="19dp"
+						/>
+
+						<TextView
+							android:id="@+id/organiserProfileDescription"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:maxLines="10"
+							android:layout_marginTop="8dp"
+							android:layout_marginHorizontal="20dp"
+							android:text=""
+							android:textSize="17dp"
+						/>
+
+					</LinearLayout>
+
+					<TextView 
+						android:id="@+id/organiserEditProfile"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="0.25"
+						android:gravity="center"
+						android:text="@string/editProfile"
+						android:layout_marginTop="18dp"
+						android:textSize="25dp"
+						android:layout_marginBottom="5dp"
+					/>
+
+				</LinearLayout>
+
+			</ScrollView>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.06"
+				android:orientation="horizontal"
+				android:layout_marginVertical="5dp">
+
+				<Button
+					android:id="@+id/organiserButtonFollowers"
+					android:layout_height="match_parent"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_marginHorizontal="10dp"
+					android:text="Followers"
+					android:textColor="@color/white"
+					android:background="@drawable/roundbutton"
+				/>
+
+				<Button
+					android:id="@+id/organiserButtonEvents"
+					android:layout_height="match_parent"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_marginRight="10dp"
+					android:text="My  Events"
+					android:textColor="@color/white"
+					android:background="@drawable/registerroundbutton"
+				/>
+		
+	</LinearLayout>
+		
+		</LinearLayout>
+		
+	</FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adminOrganizatorProfileFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<ScrollView
+		 android:orientation="vertical"
+		 android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+	     <LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<ImageView 
+                android:id="@+id/adminDeleteOrgImage"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:layout_weight="0.1"
+				android:src="@drawable/profileExample"
+				android:scaleType="centerCrop">
+
+			</ImageView>
+
+			<LinearLayout
+				android:layout_marginTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/adminOrganiserName"
+						android:gravity="center"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:layout_weight="0.5"
+						android:textSize="22dp"
+						android:text=""/>
+
+					<LinearLayout
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:layout_weight="0.2"
+						android:gravity="center">
+
+						<ImageView
+							android:id="@+id/adminOrganiserRatingStar"
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/rateStar"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/adminOrganiserRating"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:layout_weight="0.3"
+						android:gravity="center|left"
+						android:text=""
+						android:textSize="25dp"/>
+
+				</LinearLayout>
+                       
+				<LinearLayout
+					android:layout_marginTop="15dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:layout_weight="0.2"
+						android:orientation="vertical"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/email"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/adminOrganiserProfileEmail"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:gravity="center|left"
+						android:layout_weight="0.8"
+						android:text=""/>
+						
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="15dp">
+
+					<LinearLayout
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:layout_weight="0.2"
+						android:orientation="vertical"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/contact"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/adminOrganiserProfileContact"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:gravity="center|left"
+						android:layout_weight="0.8"
+						android:text=""/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="15dp">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="0.2"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/location"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/adminOrganiserProfileCity"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:gravity="center|left"
+						android:text="City: "
+						android:layout_centerVertical="true"
+						android:layout_weight="0.3"/>
+
+					<TextView
+						android:id="@+id/adminOrganiserProfileAddress"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:gravity="center|left"
+						android:text=""
+						android:layout_centerVertical="true"
+						android:layout_weight="0.5"
+						android:textColor="@color/lightBlue"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_marginTop="15dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginBottom="15dp">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="0.2"
+						android:gravity="center">
+
+						<ImageView
+							android:layout_height="40dp"
+							android:layout_width="40dp"
+							android:src="@drawable/sketch"/>
+
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/adminOrganiserProfileFoundationDate"
+						android:layout_height="match_parent"
+						android:layout_width="0dp"
+						android:gravity="center|left"
+						android:text="Founded : "
+						android:layout_centerVertical="true"
+						android:layout_weight="0.8"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<TextView
+						android:layout_height="18dp"
+						android:layout_width="wrap_content"
+						android:text="Description"
+						android:textSize="15dp"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="62dp"
+						android:gravity="center">
+
+						<TextView
+							android:id="@+id/adminOrganiserProfileDescription"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:maxLines="3"
+							android:layout_marginTop="3dp"
+							android:text=""
+						/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		
+		</LinearLayout>
+		
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_horizontal"
+		android:layout_margin="10dp"
+		android:layout_gravity="bottom">
+		
+		<Button
+			android:text="Events"
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+            android:layout_weight="0.4"
+			android:layout_marginRight="5dp"
+			android:id="@+id/adminViewEvents"
+            android:textColor="@color/white"
+		    android:background="@drawable/roundaddeventbutton"
+		/>
+
+		<Button
+			android:text="Delete"
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+			android:layout_marginLeft="5dp"
+            android:layout_weight="0.4"
+			android:id="@+id/adminDeleteOrganizerProfile"
+            android:textColor="@color/white"
+		    android:background="@drawable/registerRoundButton"
+		/>
+	</LinearLayout>
+	
+</FrameLayout>
+

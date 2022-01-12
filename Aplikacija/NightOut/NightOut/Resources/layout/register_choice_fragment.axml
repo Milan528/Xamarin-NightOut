@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background = "@color/white">
+	<LinearLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "0dp"
+		android:layout_weight="0.6"
+		android:minWidth="25px"
+		android:minHeight="25px">
+
+		<TextView
+			android:text = "@string/register_choice"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+		    android:gravity="center"
+			android:textSize="30dp"
+			android:textColor="@color/colorPrimaryDark"
+		
+		/>
+	</LinearLayout>
+	<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_weight="0.4"
+			android:orientation="horizontal">
+		<RelativeLayout
+			android:layout_width = "0dp"
+			android:layout_height = "match_parent"
+			android:layout_weight="0.5"
+			>
+			<ImageButton
+				android:id="@+id/btnOrganRegister"
+				android:src = "@drawable/organicon"
+				android:layout_width = "75dp"
+				android:layout_height = "75dp"
+				android:background = "@drawable/circle_btn_shape"
+				android:scaleType="fitCenter"
+				android:padding="8dp"
+				android:layout_centerHorizontal="true"
+				/>
+			<TextView
+				android:text="Organiser"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtRegOrg"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_centerHorizontal="true"	
+				android:layout_below="@id/btnOrganRegister"
+				android:textSize="15dp"
+			/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width = "0dp"
+			android:layout_height = "match_parent"
+			android:layout_weight="0.5"
+			>
+			<ImageButton
+				android:id="@+id/btnUserRegister"
+				android:src="@drawable/usericon"
+				android:layout_width="75dp"
+				android:layout_height="75dp"
+				android:padding="8dp"
+				android:scaleType="fitCenter"
+				android:layout_centerHorizontal="true"
+				android:background="@drawable/circle_btn_shape"
+			/>
+			<TextView
+				android:text="User"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtRegUse"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@id/btnUserRegister"
+				android:textSize="15dp"
+			/>
+	
+		</RelativeLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="darkBlue">#5156ad</color>
+    <color name="splashBackground">#fff</color>
+    <color name="white">#fff</color>
+    <color name="lightBlue">#4179d3</color>
+    <color name="lightBlueClicked">#4179e9</color>
+    <color name="lightRed">#E87B53</color>
+    <color name="lightGreen">#77d8d0</color>
+    <color name="registerBackground">#110b5e</color>
+    <color name="registerBackgroundComplementary">#a66214</color>
+    <color name="lightGray">#E2E2E2</color>
+    <color name="darkerGrey">#919191</color>
+</resources>

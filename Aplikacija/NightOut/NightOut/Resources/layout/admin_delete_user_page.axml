@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/adminUserProfileFragmentContainer"
+    android:background="@color/white">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.9">
+
+			<LinearLayout
+				android:paddingTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="0.3">
+
+					<Refractored.Controls.CircleImageView
+						android:id="@+id/adminUserProfilePicture"
+						android:layout_height="100dp"
+						android:layout_width="100dp"
+						android:layout_gravity="center"
+						android:src="@drawable/Account"
+						android:scaleType="centerCrop"/>
+	
+				</FrameLayout>
+
+				<TextView
+					android:id="@+id/adminUserNameAndSurname"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:gravity="center"
+					android:layout_gravity="bottom"
+					android:text="Username"
+					android:layout_marginVertical="10dp"/>
+
+				<View
+					android:layout_height="1dp"
+					android:layout_width="match_parent"
+					android:layout_gravity="bottom"
+					android:background="@color/lightGray"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="0.63"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="40dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="15dp">
+
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="0.3"
+							android:gravity="center">
+
+							<ImageView
+								android:layout_height="40dp"
+								android:layout_width="40dp"
+								android:src="@drawable/email"
+								android:scaleType="centerCrop"
+							/>	
+
+						</LinearLayout>
+
+						<TextView
+							android:id="@+id/adminUserProfileEmail"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:gravity="center|left"
+							android:text="Email:"
+							android:layout_centerVertical="true"
+							android:layout_weight="0.7"/>
+			
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="15dp">
+
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="0.3"
+							android:gravity="center">
+			
+							<ImageView
+								android:layout_height="50dp"
+								android:layout_width="50dp"
+								android:src="@drawable/calendarIcon"/>
+
+						</LinearLayout>
+
+						<TextView
+							android:id="@+id/adminUserProfileDateOfBirth"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:gravity="center|left"
+							android:text="Date:"
+							android:layout_centerVertical="true"
+							android:layout_weight="0.7"/>
+			
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:layout_height="40dp"
+						android:layout_marginBottom="15dp">
+
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_weight="0.3"
+							android:layout_height="match_parent"
+							android:gravity="center">
+
+							<ImageView
+								android:src="@drawable/gendericon"
+								android:layout_width="40dp"
+								android:layout_height="40dp"/>
+
+						</LinearLayout>
+
+						<TextView
+							android:id="@+id/adminUserProfileSex"
+							android:layout_height="match_parent"
+							android:layout_width="0dp"
+							android:gravity="center|left"
+							android:text="Sex:"
+							android:layout_weight="0.7"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="80dp"
+						android:orientation="vertical"
+						android:gravity="center"
+						android:layout_marginBottom="15dp">
+
+						<TextView
+							android:layout_height="18dp"
+							android:layout_width="wrap_content"
+							android:text="Description"
+							android:textSize="15dp"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="62dp"
+							android:gravity="center">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:maxLines="3"
+								android:layout_marginTop="3dp"
+								android:text=""
+								android:id="@+id/adminUserProfileDescription" />
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.07"
+			android:gravity="center_horizontal"
+			android:layout_marginBottom="10dp">
+		
+			<Button
+				android:text="Delete"
+				android:layout_height="match_parent"
+				android:layout_width="200dp"
+				android:id="@+id/adminDeleteUserProfile"
+				android:textColor="@color/white"
+				android:background="@drawable/roundaddeventbutton"
+			/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>

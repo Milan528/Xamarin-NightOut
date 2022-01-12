@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/rootView"
+	>
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal = "30dp">
+		
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterOrganEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="E-mail"
+				android:inputType="textEmailAddress"
+				/>
+		
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterOrganPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Password"
+				android:inputType="textPassword"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginVertical="10dp">
+		<EditText
+				android:id="@+id/RegisterOrganName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Name"
+				android:inputType="textPersonName"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="100"
+			android:layout_marginVertical="10dp">
+		
+		<android.support.design.widget.TextInputLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="30">
+			<EditText
+					android:id="@+id/RegisterOrganCity"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="City"
+					android:inputType="textPersonName"/>
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="70">
+			<EditText
+				android:id="@+id/RegisterOrganAdress"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Adress"
+				android:inputType="textPersonName"/>
+		</android.support.design.widget.TextInputLayout>
+
+	</LinearLayout>
+
+
+	<Button
+			android:id="@+id/RegisterOrganBtnRegister"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:text="Register"
+			android:textColor="@color/white"
+			android:background="@drawable/registerRoundButton"
+			android:layout_marginTop="18dp"
+			android:layout_gravity="center"/>
+
+	<TextView 
+		android:id="@+id/goToLogin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_below="@+id/RegisterOrganBtnRegister"
+		android:text="@string/login_text"
+		android:layout_marginTop="18dp"
+	/>
+	</LinearLayout>
+	
+
+
+</LinearLayout>
+	</AbsoluteLayout>

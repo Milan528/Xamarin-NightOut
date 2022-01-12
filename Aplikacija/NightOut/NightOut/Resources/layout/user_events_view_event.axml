@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/white">
+
+    <ImageView 
+		android:id="@+id/UserEventImage"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.3"
+		android:scaleType="centerCrop"
+		android:src="@drawable/profileExample"/>
+	
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp" 
+		android:layout_weight="0.6"
+		android:layout_marginTop="15dp"
+		android:layout_marginHorizontal="15dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40"
+					android:text=" City :"
+					android:textSize="20dp"
+				/>
+
+				<TextView
+					android:id="@+id/userEventCityText"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="60"
+					android:inputType="text"
+					android:textColor="@color/colorPrimary"
+					android:text=""
+					android:textSize="20dp"
+				/>
+				
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40"
+					android:text=" Address :"
+					android:textSize="20dp"
+				/>
+
+				<TextView
+					android:id="@+id/userEventAddressText"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="60"
+					android:inputType="text"
+					android:text=""
+					android:textColor="@color/colorPrimary"
+					android:textSize="20dp"
+				/>
+				
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40"
+					android:text=" Organiser :"
+					android:textSize="20dp"
+				/>
+
+				<TextView
+					android:id="@+id/userEventOrganiserText"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="60"
+					android:inputType="text"
+					android:text=""
+					android:textStyle="italic|bold"
+					android:textColor="@color/colorPrimary"
+					android:textSize="20dp"
+				/>
+				
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40"
+					android:text=" Event type :"
+					android:textSize="20dp"
+				/>
+
+				<TextView
+					android:id="@+id/userEventTypeText"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="60"
+					android:inputType="text"
+					android:text=""
+					android:textColor="@color/colorPrimary"
+					android:textSize="20dp"
+				/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="15dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="40"
+					android:text=" Date of event :"
+					android:textSize="20dp"
+				/>
+
+				<TextView
+					android:id="@+id/userEventDateText"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="60"
+					android:inputType="text"
+					android:textSize="20dp"
+					android:textColor="@color/colorPrimary"
+					android:text=""	
+				/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="Description"
+					android:gravity="center"
+					android:textSize="17dp"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:maxLines="10"
+					android:layout_marginVertical="10dp"
+					android:text=""
+					android:textSize="18dp"
+					android:textColor="@color/colorPrimary"
+					android:id="@+id/userEventDescription"
+				/>
+
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+	</ScrollView>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="0.06"
+		android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+		
+		<Button
+			android:text="Follow"
+			android:layout_height="match_parent"
+			android:layout_width="200dp"
+			android:id="@+id/userEventsViewEventUnFollowEvent"
+            android:textColor="@color/white"
+		    android:background="@drawable/roundaddeventbutton"
+		/>
+
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="Rate organiser"
+		android:textSize="23dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="20dp"
+		android:gravity="center_horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/userRateOrgTitle" />
+	<RatingBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="20dp"
+		android:rating="0"
+		android:numStars="5"
+		android:id="@+id/userRateOrgBar" />
+	<Button
+		android:text="Confirm"
+		android:textColor="@color/white"
+		android:textSize="14dp"
+		android:layout_width="140dp"
+		android:layout_height="40dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/userRateOrgBtnConfirm"
+		android:background="@drawable/roundbutton"
+		android:layout_marginBottom="20dp"
+	/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_margin="10dp"
+        android:orientation="horizontal"
+		>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="25"
+			android:layout_marginRight="10dp"
+			>
+
+			<Refractored.Controls.CircleImageView
+				android:id="@+id/userEventcontainerPicture"
+				android:layout_height="100dp"
+				android:layout_width="match_parent"
+				android:layout_gravity="center"
+				android:src="@drawable/splashimage"
+				android:scaleType="centerCrop"
+			/>
+         
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="50">
+
+			<TextView
+				android:id="@+id/userEventContainerEventDate"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.3"
+				android:text="Date"/>
+
+			<TextView
+				android:id="@+id/userEventContainerEventAddress"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.3"
+				android:text="Address"/>
+
+			<TextView
+				android:id="@+id/userEventContainerEventCity"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="0.3"
+				android:text="City"/>
+	
+		</LinearLayout>
+	
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="25"
+			android:gravity="center_vertical">
+
+			<Button
+				android:id="@+id/userEventContainerView"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:text="View"
+				android:textColor="@color/white"
+				android:background="@drawable/roundButton"/>
+		
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="@color/darkerGrey"
+	/>
+</LinearLayout>
